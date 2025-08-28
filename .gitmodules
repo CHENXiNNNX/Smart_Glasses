@@ -2,3 +2,6 @@
 	path = Demo
 	url = https://github.com/CHENXiNNNX/Smart_Glasses_Subcode.git
 	branch = main
+[submodule "SDK"]
+	path = SDK
+	url = https://github.com/CHENXiNNNX/Smart_Glasses_SDK.git
