@@ -1,0 +1,4 @@
+[submodule "Demo"]
+	path = Demo
+	url = https://github.com/CHENXiNNNX/Smart_Glasses_Subcode.git
+	branch = main
