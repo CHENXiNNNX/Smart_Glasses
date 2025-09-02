@@ -1,0 +1,6 @@
+# *.o
+.vscode
+/build/
+/Demo/
+/home/irex/WorkSpace/Smart_Glasses/SDK/
+
