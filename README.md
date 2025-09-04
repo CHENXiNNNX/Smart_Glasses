@@ -41,10 +41,10 @@ SDK开发环境与系统配置详见SDK文件夹中的[README.md](./SDK/README.m
 
 ```
 Smart_Glasses/
-├── Demo/                  # Smart_Glasses开发板的demo
-│   ├── Smart_Glasses_demo/     # 智能眼镜
-│   └── xxx_demo/          # xxx对应的测试用子demo
-├── SDK/                   # SDK文件夹
-│   ├── rv1106-sdk/        # 基于luckfox的SDK
-│   └── README             # SDK和开发板使用相关说明
+├── Demo/                        # Smart_Glasses开发板的demo
+│   ├── Smart_Glasses_demo/      # 智能眼镜
+│   └── xxx_demo/                # xxx对应的测试用子demo
+├── SDK/                         # SDK文件夹
+│   ├── rv1106-sdk/              # 基于luckfox的SDK
+│   └── README                   # SDK和开发板使用相关说明
 ```
