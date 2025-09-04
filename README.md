@@ -1,48 +1,20 @@
-<h1 align="center">Echo-Mate</h1>
+<h1 align="center">Smart_Glasses</h1>
 
 <br>
 
 ## 1. Overview
 
-本项目是一个十分硬核，功能超多的桌面机器人。是基于RV1106，有LVGL菜单，可以陪你聊天，翻译，看天气，能跑AI相机，小巧的linux桌面助手和开发板~
+本仓库是基于RV11系列开发的智能眼镜项目，现目前正在积极开发各项基础功能，包括但不限于智能AI对话，AI识图，音视频实时通信，光波导等功能，其中智能AI功能是在开源项目Echo-Mate: https://github.com/No-Chicken/Echo-Mate.git进行对于新功能开发
 
-硬件开源地址：https://oshwhub.com/no_chicken/ai-desktop-robot-echo
+硬件开源地址：待定(设计中)
 
-演示视频链接: https://www.bilibili.com/video/BV161ZaYyEmF/
-
-手册地址: https://no-chicken.xyz/
-
-<p align="center">
-   <img border="1px" width="75%" src="./assets/main_pic.jpeg">
-</p>
-
-
-
-## 2. 功能演示
-
-1. 功能演示截图
-
-   <p align="center">
-      <img border="1px" width="100%" src="./assets/show.png">
-   </p>
-
-2. Desk-Bot demo 功能表
-
-   <p align="center">
-      <img border="1px" width="75%" src="./assets/func_map.png">
-   </p>
-
-3. 
-
-<br>
-
-## 3. 开发环境
+## 2. 开发环境
 
 推荐使用`ubuntu22.04 LTS` ，首先拉下整个项目：
 
 ```shell
-git clone https://github.com/No-Chicken/Echo-Mate.git
-cd Echo-Mate
+git clone https://github.com/CHENXiNNNX/Smart_Glasses.git
+cd Smart_Glasses
 git submodule update --init --recursive
 ```
 如果要递归更新所有子模块，请执行：
@@ -58,17 +30,16 @@ git lfs pull
 
 SDK开发环境与系统配置详见SDK文件夹中的[README.md](./SDK/README.md).
 
-桌面机器人demo, 如何烧录使用详见Demo文件夹的[README.md](https://github.com/No-Chicken/Demo4Echo/blob/main/DeskBot_demo/README.md).
-
 <br>
 
-## 4. 仓库目录说明
+
+## 3. 仓库目录说明
 
 ```
-Echo-Mate/
-├── Demo/                  # Echo开发板的demo
-│   ├── DeskBot_demo/      # AI桌面机器人
-│   └── xxx_demo/          # xxx对应的独立子demo
+Smart_Glasses/
+├── Demo/                  # Smart_Glasses开发板的demo
+│   ├── Smart_Glasses_demo/     # 智能眼镜
+│   └── xxx_demo/          # xxx对应的测试用子demo
 ├── SDK/                   # SDK文件夹
 │   ├── rv1106-sdk/        # 基于luckfox的SDK
 │   └── README             # SDK和开发板使用相关说明
