@@ -5,3 +5,4 @@
 [submodule "SDK"]
 	path = SDK
 	url = git@github.com:CHENXiNNNX/Smart_Glasses_SDK.git
+	branch = main

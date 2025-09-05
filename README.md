@@ -4,7 +4,7 @@
 
 ## 1. Overview
 
-本仓库是基于RV11系列开发的智能眼镜项目，现目前正在积极开发各项基础功能，包括但不限于智能AI对话，AI识图，音视频实时通信，光波导等功能，其中智能AI功能是在开源项目Echo-Mate (https://github.com/No-Chicken/Echo-Mate.git) 进行对于新功能开发
+本仓库是基于RV11系列开发的智能眼镜项目，现目前正在积极开发各项基础功能，包括但不限于智能AI对话，AI识图，音视频实时通信，光波导等功能，其中智能AI功能是基于开源项目Echo-Mate (https://github.com/No-Chicken/Echo-Mate.git) 的基础上进行新功能的开发
 
 目前支持开发板:
 - luckfox pico ultra w 开发板
