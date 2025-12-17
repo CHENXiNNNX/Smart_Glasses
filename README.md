@@ -1,49 +1,72 @@
-<h1 align="center">Smart_Glasses</h1>
+<h1 align="center">Smart Glasses</h1>
 
-<br>
+<p align="center">基于 RV1106 的智能眼镜项目</p>
 
-## 1. Overview
+## 📖 简介
 
-本仓库是基于RV11系列开发的智能眼镜项目，现目前正在积极开发各项基础功能，包括但不限于智能AI对话，AI识图，音视频实时通信，光波导等功能，其中智能AI功能是基于开源项目Echo-Mate (https://github.com/No-Chicken/Echo-Mate.git) 的基础上进行新功能的开发
+本项目是基于 Rockchip RV1106 开发的智能眼镜系统，集成 AI 对话、AI 识图、音视频实时通信等功能。
 
-目前支持开发板:
-- echo-mate 开发板
+**支持平台**: Echo-Mate 开发板
 
-硬件开源地址：待定(设计中)
+**硬件开源**: 设计中
 
-## 2. 开发环境
-
-推荐使用`ubuntu22.04 LTS` ，首先拉下整个项目：
-
-```shell
-git clone https://github.com/CHENXiNNNX/Smart_Glasses.git
-cd Smart_Glasses
-git submodule update --init --recursive
-```
-如果要递归更新所有子模块，请执行：
-
-```shell
-git submodule update --remote --merge --recursive
-```
-由于子仓库有大文件LFS，，请执行：
-
-```shell
-git lfs pull
-```
-
-SDK开发环境与系统配置详见SDK文件夹中的[README.md](./SDK/README.md).
-
-<br>
-
-
-## 3. 仓库目录说明
+## 📁 仓库结构
 
 ```
 Smart_Glasses/
-├── Demo/                        # Smart_Glasses开发板的demo
-│   ├── Smart_Glasses_demo/      # 智能眼镜
-│   └── xxx_demo/                # xxx对应的测试用子demo
-├── SDK/                         # SDK文件夹
-│   ├── rv1106-sdk/              # 基于luckfox的SDK
-│   └── README                   # SDK和开发板使用相关说明
+├── Demo/                        # 演示程序
+│   └── Smart_Glasses_demo/      # 智能眼镜主程序
+│       ├── app/                 # 应用模块
+│       │   ├── chatbot/         # AI聊天机器人
+│       │   ├── media/           # 音视频处理
+│       │   ├── protocol/        # 通信协议（WebRTC/WebSocket/MQTT）
+│       │   ├── network/         # 网络管理（WiFi/蓝牙/LTE）
+│       │   └── tool/            # 工具库
+│       └── test/                # 单元测试
+│
+└── SDK/                         # 开发SDK
+    ├── rv1106-sdk/              # 基于 Luckfox 的 SDK
+    └── README.md                # SDK使用说明
 ```
+
+## 🚀 快速开始
+
+### 1. 克隆仓库
+
+```bash
+git clone https://github.com/CHENXiNNNX/Smart_Glasses.git
+cd Smart_Glasses
+git submodule update --init --recursive
+git lfs pull
+```
+
+### 2. 配置开发环境
+
+推荐使用 **Ubuntu 22.04 LTS**，详见 [SDK/README.md](./SDK/README.md)
+
+### 3. 编译
+
+```bash
+cd Demo/Smart_Glasses_demo
+mkdir build && cd build
+cmake ..
+make -j$(nproc)
+```
+
+## 🎯 核心功能
+
+| 功能 | 说明 |
+|------|------|
+| **AI 对话** | 唤醒词检测、语音识别、LLM 对话、TTS 合成 |
+| **AI 识图** | 图像分析与理解 |
+| **音视频** | 实时采集、编码、WebRTC 传输 |
+| **网络通信** | WiFi/蓝牙/LTE 连接管理 |
+
+## 📚 文档
+
+- [SDK 开发环境配置](./SDK/README.md)
+- [Demo 使用说明](./Demo/README.md)
+
+## 🔗 致谢
+
+本项目基于 [Echo-Mate](https://github.com/No-Chicken/Echo-Mate.git) 开发
