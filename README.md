@@ -66,7 +66,3 @@ make -j$(nproc)
 
 - [SDK 开发环境配置](./SDK/README.md)
 - [Demo 使用说明](./Demo/README.md)
-
-## 🔗 致谢
-
-本项目基于 [Echo-Mate](https://github.com/No-Chicken/Echo-Mate.git) 开发
